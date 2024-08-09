@@ -7,4 +7,11 @@ public with sharing class contactController {
         ];
         return conList;
     }
+    public static List<Account> getAccountList(){
+        List<Account> accList = [
+            SELECT Id, Name
+            FROM Account
+        ];
+        return accList;
+    }
 }
